@@ -1,0 +1,202 @@
+<head>
+<link rel="stylesheet" type="text/css" href="paiement.css" />
+</head>
+<body>
+<div id="wrap">
+	<div id="grid">
+		<div class="column column1">
+		<div class="step" id="step1">
+			<div class="number">
+				<span>1</span>
+			</div>
+			<div class="titre">
+				<h1> Adresse Mail</h1>
+			</div>
+			<div class="modify">
+				<i class="fa fa-plus-circle"></i>
+			</div>
+		</div>
+		<div class="content" id="email">
+			<form class="go-right">
+				<br><br><br><br>
+				<div>
+        <input type="email" name="email" value="" id="adresse-mail" placeholder="Adresse mail" data-trigger="change" data-validation-minlength="1" data-type="email" data-required="true" data-error-message="Entrez une adresse mail valide."/><label for="email">Adresse Mail</label>
+                </div>
+		<br><br><br><br><br><br><br>
+				
+			</form>
+			
+		</div>
+		<div class="step" id="step2">
+			<div class="number">
+				<span>2</span>
+			</div>
+			<div class="titre">
+				<h1> Informations de facturation</h1>
+			</div>
+		</div>
+		<div class="content" id="adresse">
+			<form class="go-right">
+				<div>
+				<input type="Prenom" name="Prenom" value="" id="Prenom" placeholder="Prenom" data-trigger="change" data-validation-minlength="1" data-type="name" data-required="true" data-error-message="Entrez votre Prénom"/><label for="Prenom">Prénom</label>
+        </div>
+        
+				<div>
+				<input type="Nom" name="Nom" value="" id="Nom" placeholder="Nom" data-trigger="change" data-validation-minlength="1" data-type="name" data-required="true" data-error-message="Entrez votre Nom"/><label for="Nom">Nom</label>
+				</div>
+				<div>
+				<input type="telephone" name="telephone" value="" id="telephone" placeholder="Numéro (33) 00 00 00 00 00" data-trigger="change" data-validation-minlength="1" data-type="number" data-required="true" data-error-message="Entrez votre numéro de télephone"/><label for="telephone">Télephone</label>
+				</div>
+				<div>
+				<input type="text" name="adresse" value="" id="adresse" placeholder="Adresse" data-trigger="change" data-validation-minlength="1" data-type="text" data-required="true" data-error-message="Entrez votre adresse "/><label for="Adresse">Adresse</label>
+				</div>
+				<div>
+				<input type="text" name="ville" value="" id="Ville" placeholder="Ville" data-trigger="change" data-validation-minlength="1" data-type="text" data-required="true" data-error-message="Entrez votre Ville"/><label for="Ville">Ville</label>
+				</div>
+				<div>
+				<div class="ville_options">
+        			<div class="select">
+                 		<select id="ville">
+                  	 		<option value = "1">Paris</option>
+                   			<option value = "2">Marseille</option>
+                   			<option value = "3">Lille</option>
+                   			<option value = "4">Etc.</option>
+                 		</select>
+                 	</div>
+          				<label class="ville" for="Ville">Ville</label>
+          		</div>
+				</div>
+				<div>
+				<input type="text" name="Code postal" value="" id="Code postal" placeholder="Code postal" data-trigger="change" data-validation-minlength="1" data-type="text" data-required="true" data-error-message="Entrez votre Code postal"/><label for="Code postal">Code postal</label>
+				</div>
+				<div>
+				<div class="pays_options">
+        			<div class="select">
+                 		<select id="Pays">
+                  	 		<option value = "1">France</option>
+                   			<option value = "2">Algérie</option>
+                   			<option value = "3">Etats Unis</option>
+                   			<option value = "4">Etc.</option>
+                 		</select>
+                 	</div>
+                <label class="pays" for="pays">Pays</label>
+          		</div>
+				</div>
+				<div>
+				<input type="checkbox"/>
+				<label class="même" for="même_expédition">La même que votre adresse d'expédition</label><span></span>
+				</div>
+			</form>
+			
+		</div>
+	</div>
+	<div class="column column2">
+		<div class="step" id="step3">
+			<div class="number">
+				<span>3</span>
+			</div>
+			<div class="titre">
+				<h1>Informations d'expédition</h1>
+			</div>
+			<div class="modify">
+				<i class="fa fa-plus-circle"></i>
+			</div>
+		</div>
+		<div class="content" id="expédition">
+			<form action="" method="" name="">
+				<div>
+					<input type="checkbox" id="expédition" value="1"/><label for="expédition">  Expédition Standard <span class="prix">€4.00</span></label>
+				</div>
+				<p>		
+					<input type="checkbox" id="expédition" value="2"/><label for="expédition">  Expédition Expresse<span class="prix">€8.00</span></label>
+				</p>
+				<p>		
+					<input type="checkbox" id="expédition" value="3"/><label for="expédition">  Expédition instantanée<span class="prix">€12.00</span></label>
+				</p>
+			</form>
+			
+		</div>
+		<div class="step" id="step4">
+			<div class="number">
+				<span>4</span>
+			</div>
+			<div class="titre">
+				<h1> Informations de Paiement</h1>
+			</div>
+			<div class="modify">
+				<i class="fa fa-plus-circle"></i>
+			</div>
+		</div>
+		<div class="content" id="paiement">
+			<div class="left">
+			<form class="go-right">
+				<div>
+				<input type="text" name="card_number" value="" id="card_number" placeholder="xxxx-xxxx-xxxx-xxxx" data-trigger="change" data-validation-minlength="1" data-type="name" data-required="true" data-error-message="Entrez votre carte de crédit"/><label for="card_number">Card Number</label>
+				</div>
+				<div>
+				  <div class="expiration">	
+				      <div class="mois_select">
+				        <select name="exp_mois" value="" id="exp_mois" placeholder="" data-trigger="change" data-type="name" data-required="true" data-error-message="Entrez la date d'expiration de votre carte bancaire">
+							<option value = "1">01 (Jan)</option>
+                   			<option value = "2">02 (Fev)</option>
+                   			<option value = "3">03 (Mar)</option>
+                   			<option value = "4">04 (Avr)</option>
+                   			<option value = "5">05 (Mai)</option>
+                   			<option value = "6">06 (Jui)</option>
+                   			<option value = "7">07 (Jul)</option>
+                   			<option value = "8">08 (Aôu)</option>
+                   			<option value = "9">09 (Sep)</option>
+                   			<option value = "10">10 (Oct)</option>
+                   			<option value = "11">11 (Nov)</option>
+                   			<option value = "12">12 (Dec)</option>
+                        </select>
+                      </div>
+                      <div class="année_select">
+				        <select name="exp_année" value="" id="exp_année" placeholder="" data-trigger="change" data-type="name" data-required="true" data-error-message="Enter Your Credit Card Expiration Date">
+							<option value = "1">2021</option>
+                   			<option value = "2">2022</option>
+                   			<option value = "3">2023</option>
+                   			<option value = "4">2024</option>
+                   			<option value = "5">2025</option>
+                   			<option value = "6">2026</option>
+                   			<option value = "7">2027</option>
+                   			<option value = "8">2028</option>
+                   			<option value = "9">2029</option>
+                   			<option value = "10">2030</option>
+                   		</select>
+            	      </div>
+                  <label class="exp_date" for="Exp_Date">Date Exp</label>
+            	    </div>
+            	  </div>
+            	<div class="sec_num">
+              <div>
+				        <input type="text" name="ccv" value="" id="ccv" placeholder="213" data-trigger="change" data-validation-minlength="3" data-type="name" data-required="true" data-error-message="Entrez votre code de sécurité"/><label for="ccv">Code de Sécurité</label>
+				      </div>
+				      </div>
+			      </form>
+			</div>
+			<div class="right">
+				<div class="accepted">
+					<span><img src="https://i.imgur.com/Z5HVIOt.png"></span>
+					<span><img src="https://i.imgur.com/Le0Vvgx.png"></span>
+					<span><img src="https://i.imgur.com/D2eQTim.png"></span>
+					<span><img src="https://i.imgur.com/Pu4e7AT.png"></span>
+					<span><img src="https://i.imgur.com/ewMjaHv.png"></span>
+					<span><img src="https://i.imgur.com/3LmmFFV.png"></span>
+				</div>
+				<div class="secured">
+					<img class="lock" src="https://i.imgur.com/hHuibOR.png">
+					<p class="security info">Vos paiements sont sécurisés de bout en bout grâce à la technologie 3D Secure.</p>
+				</div>
+			</div>
+			<a class="continuer" href="#">Continuer</a>
+ 		</div>
+ 	</div>
+ 	
+</div>
+
+
+</body>
+<footer> 
+	
+</footer>

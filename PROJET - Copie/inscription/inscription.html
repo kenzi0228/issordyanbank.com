@@ -1,0 +1,88 @@
+<!DOCTYPE html> 
+<head>
+<link defer rel="stylesheet"  href="inscription.css" />
+<script defer src="inscription.js"></script>
+<meta charset="utf-8">
+</head>
+<body>
+<div class="form_wrapper">
+    <div class="form_container">
+
+      <div class="title_container">
+        <h2>Formulaire d'inscription a ISSORDYAN BANK</h2>
+      </div>
+      <div class="row clearfix">
+        <div class="">
+          <form>
+            <div class="input_field"> <span><i aria-hidden="true" class="fa fa-envelope"></i></span>
+              <input type="email" name="email" placeholder="Email" required />
+            </div>
+            <div id="password" class="input_field"> <span><i aria-hidden="true" class="fa fa-lock"></i></span>
+              <input type="password" name="password" placeholder="mot de passe" required />
+            </div>
+            <div class="input_field"> <span><i aria-hidden="true" class="fa fa-lock"></i></span>
+              <input type="password" name="password" placeholder="Confirmez le mot de passe" required />
+            </div>
+            <div class="row clearfix">
+              <div class="col_half">
+                <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
+                  <input type="text" name="name" placeholder="Prénom" required/>
+                </div>
+              </div>
+              <div class="col_half">
+                <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
+                  <input type="text" name="name" placeholder="Nom" required />
+                </div>
+              </div>
+            </div>
+                <div class="input_field checkbox_option" required>
+                <input type="checkbox" name="checkboxgroup1" id="ch1" >
+                <label for="ch1">HOMME</label>
+                <input type="checkbox" name="checkboxgroup1" id="ch2">
+                <label for="ch2">FEMME</label>
+                </div>
+                <div class="input_field select_option">
+                  <select>
+                    <option>Choississez un pays</option>
+                    <option>ALLEMAGNE</option>
+                    <option>ALGERIE</option>
+                    <option>ARGENTINE</option>
+                    <option>BELGIQUE</option>
+                    <option>BIELORUSSIE</option>
+                    <option>CHILI</option>
+                    <option>CANADA</option>
+                    <option>FINLANDE</option>
+                    <option>FRANCE</option>
+                    <option>ESPAGNE</option>
+                    <option>ITALIE</option>
+                    <option>ETATS UNIS</option>
+                    <option>MAROC</option>
+                    <option>MEXIQUE</option>
+                    <option>NORVEGE</option>
+                    <option>COLOMBIE</option>
+                    <option>RUSSIE</option>
+                    <option>CHINE</option>
+                    <option>VENEZUELA</option>
+                    <option>ROYAUME UNI</option>
+                    <option>PORTUGAL</option>
+                    <option>TUNISIE</option>
+                    <option>ZIMBABWE</option>
+                    <option>ZAMBIE</option>
+                  </select>
+                  <div class="select_arrow"></div>
+                </div>
+              <div class="input_field checkbox_option">
+                <input type="checkbox" id="cb1">
+            <label for="cb1">J'accepte les <a href="../cgu/cgu.html">conditions génerales d'utilisation</a> </label>
+              </div>
+              <div class="input_field checkbox_option">
+                <input type="checkbox" id="cb2">
+            <label for="cb2">Je souhaite m'abonner a la Newsletter</label>
+              </div>
+            <input class="button" type="submit" value="S'inscrire" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</body> 

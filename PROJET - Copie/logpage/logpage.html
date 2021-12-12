@@ -1,0 +1,78 @@
+<!DOCTYPE html> 
+             <html> 
+                 <head>
+               <link rel="stylesheet" type="text/css" href="logpage.css" />
+                <script defer src="logpage.js"></script>
+               </head>
+                       
+                          <form>
+                       <!--   con = Container -->
+   <div class="con">
+   
+   <header class="head-form">
+      <h2>Log In</h2>
+     
+      <p>Connectez vous ici en utilisant votre identifiant et votre mot de passe</p>
+   </header>
+   <br>
+<!-- Username -->
+   <div class="field-set">
+         <span class="input-item">
+           <i class="fa fa-user-circle"></i>
+         </span>
+         
+         <input class="form-input" id="txt-input" type="text" placeholder="@UserName" required>
+ <!-- Password -->    
+      <br>
+      <span class="input-item">
+        <i class="fa fa-key"></i>
+       </span>
+      <input class="form-input" type="password" placeholder="Password" id="pwd"  name="password" required>
+     
+ <!--      Show/hide password  -->
+     <span>
+        <i class="fa fa-eye" aria-hidden="true"  type="button" id="eye"> 
+            <script type ="text/javascript">
+            function show() {var p = document.getElementById('pwd'); p.setAttribute('type', 'text');}
+
+            function hide() {var p = document.getElementById('pwd'); p.setAttribute('type', 'password');}
+</script>
+            <figure>
+                <img src="../Icones/eye.png" class="icone" alt="logo oeil"  height ="15" width="15"> 
+            </figure>
+        </i>
+     </span>
+      <br>
+<!--        bouttons -->
+    <!--      boutton LogIn -->
+      <button class="log-in"> S'identifier </button>
+   </div>
+  
+    <!--   autres boutons -->
+                <div class="other">
+        <!--      Forgot Password bouton-->
+                        <button class="btn submits frgt-pass">Mot de passe oublié</button>
+    <!--     Sign Up connexion bouton -->
+      <button class="btn submits sign-up">se connecter 
+    <!--         Sign Up  -->
+      <i class="fa fa-user-plus" aria-hidden="true">
+          <figure>
+                <img src="../Icones/ajout.png" class="icone" alt="logo utilisateur ajouté"  height ="20" width="20"> 
+            </figure>
+      </i>
+      </button>  
+      <!-- sign-in inscription bouton -->
+      <button class='btn submits sign-in' >
+          Pas de compte? Inscrivez vous !
+      </button>  
+   </div>
+  </div>
+</form>
+</div>
+<div class="social-panel-container">
+    
+  
+  <div class="floating-text">
+    N'attendez plus, choisissez <a href="" target="_blank">ISSORDYAN BANK</a>
+  </div>
+ 
